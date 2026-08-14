@@ -1,6 +1,6 @@
 # include <iostream>
 using namespace std ;
-void swapvalue(int x, int y){
+void swapValue(int x, int y){
     int temp = x;
     x=y;
     y = temp;
