@@ -4,7 +4,7 @@ using namespace std;
 class Arithmetic {
 public:
 
-    // Inline function
+
     inline int add(int a, int b) {
         return a + b;
     }
