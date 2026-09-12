@@ -1,0 +1,18 @@
+# *.*
+# */*.*
+# !*.cpp
+# !*/*.cpp
+
+# Compiled Executables (without extension)
+complex
+static_data_member
+static_data_direct_access
+
+# Mac OS & build artifacts
+*.o
+*.out
+*.dSYM/
+.DS_Store
+
+# VS Code settings
+.vscode/
