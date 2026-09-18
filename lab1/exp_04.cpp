@@ -13,7 +13,7 @@ int main() {
 
     
     vector<int> vec = {1, 2, 3, 4, 5};
-    cout << "Vector elements: ";
+    cout << "Vector elements ";
     for (auto &x : vec) {
         cout << x << " ";
     }
