@@ -21,7 +21,7 @@ int main() {
 
     
     byValue(num);
-    cout << "After Call by Value: " << num << " (Unchanged)" << endl;
+    cout << "After Call by Value " << num << " (Unchanged)" << endl;
 
     
     byReference(num);
