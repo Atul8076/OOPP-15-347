@@ -28,7 +28,7 @@ int main() {
 
     Arithmetic obj;
 
-    cout << "Addition: " << obj.add(10, 20) << endl;
+    cout << "Addition " << obj.add(10, 20) << endl;
 
     cout << "Subtraction: " << obj.subtract(20) << endl;
 
