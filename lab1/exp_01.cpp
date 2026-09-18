@@ -9,14 +9,14 @@ struct StudentData {
 };
 
 
-void inputData(StudentData &s, int r, std::string n, float m) {
+void inputData(StudentData &s, int r, std::string na, float m) {
     s.rollNo = r;
-    s.name = n;
+    s.name = na;
     s.marks = m;
 }
 
 void printData(const StudentData &s) {
-    std::cout << "Roll: " << s.rollNo 
+    std::cout << "Roll: " << s.rollNo<< 
             << " | Name: " << s.name 
             << " | Marks: " << s.marks << "\n";
 }
