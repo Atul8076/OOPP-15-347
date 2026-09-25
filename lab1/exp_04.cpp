@@ -1,23 +1,26 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
+class Time {
+    int hh, mm, ss;
+
+public:
+    void input(int h, int m, int s) {
+        hh = h;
+        mm = m;
+        ss = s;
+    }
+    void show() {
+        cout << hh << ":" << mm << ":" << ss << endl;
+    }
+};
+
 int main() {
-    // Array traversal using auto and range-based for loop
-    int arr[] = {10, 20, 30, 40, 50};
-    cout << "Array elements: ";
-    for (auto val : arr) {
-        cout << val << " ";
-    }
-    cout << endl;
+    Time t1, t2;
+    t1.input(10, 25, 30);
+    t2.input(15, 40, 50);
 
-    
-    vector<int> vec = {1, 2, 3, 4, 5};
-    cout << "Vector elements ";
-    for (auto &x : vec) {
-        cout << x << " ";
-    }
-    cout << endl;
-
-    return 0;
+    t1.show();
+    t2.show();
+   
 }

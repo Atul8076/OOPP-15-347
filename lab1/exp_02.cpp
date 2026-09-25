@@ -1,35 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-void byValue(int x) {
-    x = x + 10;
-}
 
+class Student{
+    string name;
+    int rollno;
+    string branch;
+    public:
+    Student(string name,int rollno,string branch):name{name},rollno{rollno},branch{branch}{};
+    void show(){
+        cout<<"Student Name : "<<name<<endl;
+        cout<<"Branch : "<<branch<<endl;
+        cout<<"Roll number : "<<rollno<<endl;
+    }
+};
 
-void byReference(int &x) {
-    x = x + 10;
-}
+int main(){
+Student S1("Ashwin Anand Sharma",337,"CSE");
+Student S2("Ashutosh Yadav",334,"CSE");
 
-
-void byAddress(int *x) {
-    *x = *x + 10;
-}
-
-int main() {
-    int num = 50;
-
-    cout << "Initial Value: " << num << endl;
-
-    
-    byValue(num);
-    cout << "After Call by Value " << num << " (Unchanged)" << endl;
-
-    
-    byReference(num);
-    cout << "After Call by Reference: " << num << " (Changed)" << endl;
-
-    
-    byAddress(&num);
-    cout << "After Call by Address: " << num << " (Changed)" << endl;
-
-    return 0;
+S1.show();
+S2.show();
 }
