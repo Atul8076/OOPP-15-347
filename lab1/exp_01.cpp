@@ -16,7 +16,7 @@ void inputData(StudentData &s, int r, std::string na, float m) {
 }
 
 void printData(const StudentData &s) {
-    std::cout << "Roll: " << s.rollNo<< 
+    std::cout << "Roll: " << s.rollNo 
             << " | Name: " << s.name 
             << " | Marks: " << s.marks << "\n";
 }
